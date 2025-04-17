@@ -5,12 +5,10 @@ on:
     branches:
       - main
   schedule:
-    # - cron: '48 23 * * *'   # 06:48 giờ Hà Nội
-    # - cron: '48 3 * * *'    # 10:48 giờ Hà Nội
-    # - cron: '48 7 * * *'    # 14:48 giờ Hà Nội
-    # - cron: '48 10 * * *'   # 17:48 giờ Hà Nội
-    - cron: '28 10 * * *'   # 17:48 giờ Hà Nội
-    - cron: '30 10 * * *'   # 17:48 giờ Hà Nội
+    - cron: '50 23 * * *'   # 06:50 giờ Hà Nội
+    - cron: '50 3 * * *'    # 10:50 giờ Hà Nội
+    - cron: '50 7 * * *'    # 14:50 giờ Hà Nội
+    - cron: '50 10 * * *'   # 17:50 giờ Hà Nội
   workflow_dispatch:  
 
 jobs:
