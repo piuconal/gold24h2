@@ -1,0 +1,4 @@
+pytz
+requests
+beautifulsoup4
+schedule

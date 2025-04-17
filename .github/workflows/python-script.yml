@@ -1,0 +1,36 @@
+name: Gold 24h2
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # - cron: '48 23 * * *'   # 06:48 giờ Hà Nội
+    # - cron: '48 3 * * *'    # 10:48 giờ Hà Nội
+    # - cron: '48 7 * * *'    # 14:48 giờ Hà Nội
+    # - cron: '48 10 * * *'   # 17:48 giờ Hà Nội
+    - cron: '24 10 * * *'   # 17:48 giờ Hà Nội
+    - cron: '26 10 * * *'   # 17:48 giờ Hà Nội
+  workflow_dispatch:  
+
+jobs:
+  run-script:
+    runs-on: windows-latest  
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4 
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'  
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt 
+
+    - name: Run script
+      run: |
+        python gold.py  
