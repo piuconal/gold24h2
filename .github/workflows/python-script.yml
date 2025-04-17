@@ -9,8 +9,8 @@ on:
     # - cron: '48 3 * * *'    # 10:48 giờ Hà Nội
     # - cron: '48 7 * * *'    # 14:48 giờ Hà Nội
     # - cron: '48 10 * * *'   # 17:48 giờ Hà Nội
-    - cron: '24 10 * * *'   # 17:48 giờ Hà Nội
-    - cron: '26 10 * * *'   # 17:48 giờ Hà Nội
+    - cron: '28 10 * * *'   # 17:48 giờ Hà Nội
+    - cron: '30 10 * * *'   # 17:48 giờ Hà Nội
   workflow_dispatch:  
 
 jobs:

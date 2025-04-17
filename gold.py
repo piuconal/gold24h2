@@ -13,7 +13,7 @@ def send_discord_message(content):
     response = requests.post(DISCORD_WEBHOOK_URL, json=data)
 
     if response.status_code == 204:
-        print("✅ Tin nhắn đã được gửi đến Discord!")
+        print("Tin nhắn đã được gửi đến Discord!")
     else:
         print(f"❌ Lỗi gửi Discord: {response.status_code} - {response.text}")
 
